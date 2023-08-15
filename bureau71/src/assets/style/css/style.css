@@ -14,4 +14,65 @@ html {
 body {
   width: 100vw;
   height: 100vh;
+}
+
+.navbar {
+  background: linear-gradient(#0f0c0c, #f6f8fa);
+  position: fixed;
+  background-color: #0f0c0c;
+  height: 8vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar button {
+  background: linear-gradient(#0f0c0c, #f6f8fa);
+  color: #f6f8fa;
+  font-family: "jazzy";
+  font-weight: bold;
+  border-style: none;
+}
+@media screen and (max-width: 1080px) {
+  .navbar button {
+    margin: 2vw;
+    width: 100%;
+    height: 8vh;
+    font-size: 2vh;
+  }
+}
+@media screen and (min-width: 1080px) and (max-width: 1460px) {
+  .navbar button {
+    margin-right: 4vw;
+    width: 15rem;
+    height: 8vh;
+    font-size: 3vh;
+  }
+}
+@media screen and (min-width: 1460px) and (max-width: 1920px) {
+  .navbar button {
+    width: 15vw;
+    height: 8vh;
+    font-size: 3vh;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .navbar button {
+    width: 15vw;
+    height: 8vh;
+    font-size: 3vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar button {
+    width: 90%;
+    height: 8vh;
+    font-size: 1.5vh;
+  }
+}
+.navbar button:hover {
+  color: #74ef65;
+}
+.navbar button:disabled {
+  color: #60ed4e;
 }/*# sourceMappingURL=style.css.map */

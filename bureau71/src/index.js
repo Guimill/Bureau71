@@ -8,6 +8,9 @@ import './assets/style/css/style.css';
 import Root from './routes/root';
 import Index from './routes/index';
 import Error from './routes/error';
+import Blog from './components/content/blog';
+import Contact from './components/content/contact';
+import Prestations from './components/content/prestation';
 
 const router = createBrowserRouter([
     {
@@ -18,6 +21,18 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: <Index />,
+            },
+            {
+              path: "prestations",
+              element: <Prestations />,
+            },
+            {
+              path: "contact",
+              element: <Contact />,
+            },
+            {
+              path: "blog",
+              element: <Blog />,
             }
         ]
     }

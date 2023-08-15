@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <div className="navbar">
-      <Link to={'/index'} onClick={() => { window.scrollTo({ top: 0, left: 0 }) }}>
+      <Link to={'/'} onClick={() => { window.scrollTo({ top: 0, left: 0 }) }}>
         <button disabled={buttonFormationDisabled}
           onClick={() => { setButtonIndexDisabled(true); setButtonPrestationsDisabled(false); setButtonContactDisabled(false); setButtonBlogDisabled(false) }}>
           Index
