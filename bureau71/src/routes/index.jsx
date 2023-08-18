@@ -6,7 +6,7 @@ export default function Index() {
       <div class="div1"> <img src={fleur} alt="" /> </div>
       <div class="div2"> <img src={fleur} alt="" /></div>
       <div class="div3"> <p> Bureau71 c'est une aventure dans l'univers de l'écologie et l'urbanisme !
-      Une référence à la convention Ramsar pionnière dans la protection des zones humides</p> </div>
+        Une référence à la convention Ramsar pionnière dans la protection des zones humides</p> </div>
       <div class="div4"> <p> En tant qu'écologue et cartographe j'interviens en soutien de vos projets via des délimitations de zones humides, de la rédactions de rapport et prochainement des études faunes. </p> </div>
       <div class="div5"> <img src={fleur} alt="" /></div>
       <div class="div6"> <img src={fleur} alt="" /></div>
