@@ -3,6 +3,33 @@ $secondary-color : #f6f8fa;
 $third-color : rgb(227, 252, 255);
 $fourth-color: #0f0c0c;
 
+@font-face {
+    font-family: "vegan";
+    src: url('../../font/VSP.ttf') format("opentype");
+}
+
+
+@keyframes dingdong {
+    from {
+        transform: rotate(2deg);
+    }
+
+    33% {
+        transform: rotate(-2deg);
+
+    }
+
+    66% {
+        transform: rotate(2deg);
+
+    }
+
+    to {
+        transform: rotate(-2deg);
+    }
+}
+
+
 html {
     height: 100vh;
     width: 100vw;
@@ -45,6 +72,7 @@ body {
 
     display: flex;
     align-items: center;
+    height: 100vh;
 }
 
 .div2 {
@@ -53,11 +81,15 @@ body {
     display: flex;
     align-items: center;
 
-    img {
-        box-shadow: -5px 0px 50px 25px rgb(144, 185, 82);
-        border-radius: 0 20px 20px 0;
-        height: 90%;
-        width: 40vw;
+    .div2__background {
+
+        background-image: url("../../img/headpic.jpg");
+        background-size: cover;
+        border-left: none;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 14px, rgba(0, 0, 0, 0.3) 0px 7px 25px -5px;
+        border-radius: 0px 20px 20px 0px;
+        height: 60%;
+        width: 90%;
     }
 }
 
@@ -84,10 +116,15 @@ body {
     align-items: center;
     justify-content: end;
 
-    img {
+    .div5__background {
+
+        background-image: url("../../img/headpic.jpg");
+        background-size: cover;
+        border-left: none;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 14px, rgba(0, 0, 0, 0.3) 0px 7px 25px -5px;
         border-radius: 20px 0px 0px 20px;
-        height: 90%;
-        width: 40vw;
+        height: 60%;
+        width: 90%;
     }
 }
 
@@ -97,10 +134,15 @@ body {
     display: flex;
     align-items: center;
 
-    img {
-        border-radius: 0 20px 20px 0;
-        height: 90%;
-        width: 40vw;
+    .div6__background {
+
+        background-image: url("../../img/headpic.jpg");
+        background-size: cover;
+        border-left: none;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 14px, rgba(0, 0, 0, 0.3) 0px 7px 25px -5px;
+        border-radius: 0px 20px 20px 0px;
+        height: 60%;
+        width: 90%;
     }
 }
 
@@ -126,4 +168,85 @@ body {
 
     display: flex;
     align-items: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    fieldset {
+        border-radius: 20px;
+        border: #639787 solid 2px;
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-flow: column wrap;
+        margin: 10vh 0 10vh;
+
+        div {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+            #send {
+                font-family: vegan;
+                width: 20vw;
+
+                &:hover {
+                    box-shadow: -3px 5px 0px 2px lighten($color: $fourth-color, $amount: 0);
+                    color: #639787;
+                    animation-duration: 200ms;
+                    animation-name: dingdong;
+                }
+
+                &:active {
+                    box-shadow: inset 0 0 10px lighten($color: $fourth-color, $amount: 20);
+                }
+            }
+        }
+
+
+        legend {
+            background-color: $fourth-color;
+            color: $third-color;
+            padding: 3px 6px;
+            margin: 0 0 5vh 2vw;
+            font-family: vegan;
+            font-size: 2vw;
+            border-radius: 10px;
+            box-shadow: -3px 5px 0px 2px lighten($color: $fourth-color, $amount: 10);
+        }
+
+        p {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        input,
+        textarea,
+        button {
+            border-radius: 5px;
+            border: #639787 solid 1px;
+            background-color: white;
+            color: darken($color: $fourth-color, $amount: 10);
+            font-size: 1vw;
+            margin-bottom: 3vh;
+            box-shadow: -3px 5px 0px 2px lighten($color: $fourth-color, $amount: 10);
+            height: 5vh;
+        }
+
+        textarea {
+            height: 15vh;
+        }
+    }
+}
+
+.afterContact {
+    font-family: vegan;
+    font-size: xx-large;
+    color: #639787;
+    text-align: center;
+    padding: 10vh 0 10vh;
 }
