@@ -1,9 +1,9 @@
-import fleur from "../assets/img/headpic.jpg"
+import B71C from "../assets/img/Bureau71LogoCyan.png"
 
 export default function Index() {
   return (
     <div class="wrapper">
-    <div class="div1"></div>
+    <div class="div1"> <img src={B71C} alt="logo" /></div>
     <div class="div2"> <div className="div2__background"></div> </div>
     <div class="div3"> Bureau71 c'est une aventure dans l'univers de l'écologie et l'urbanisme !
         Une référence à la convention Ramsar pionnière dans la protection des zones humides</div>

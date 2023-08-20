@@ -72,7 +72,13 @@ body {
 
     display: flex;
     align-items: center;
+    justify-content: center;
+
     height: 100vh;
+
+    img {
+        height: 60vh;
+    }
 }
 
 .div2 {

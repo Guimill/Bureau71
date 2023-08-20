@@ -55,7 +55,11 @@ body {
   grid-area: 1/1/2/3;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100vh;
+}
+.div1 img {
+  height: 60vh;
 }
 
 .div2 {
