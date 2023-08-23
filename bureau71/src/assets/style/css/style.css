@@ -30,7 +30,6 @@ html {
 }
 
 body {
-  height: 100vh;
   width: 100vw;
   background-image: radial-gradient(circle at center, black 0.1rem, transparent 0), radial-gradient(circle at center, black 0.1rem, transparent 0);
   background-size: 1.3rem 1.3rem;
@@ -40,7 +39,62 @@ body {
 }
 
 .navbar {
+  position: sticky;
+  top: 0;
+  height: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navbar div {
+  background: url("../../img/Bureau71LogoCyan.png");
+  background-size: cover;
+  height: 7vh;
+  width: 4vw;
+}
+.navbar button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #39dfc4;
+  border: #0f0c0c;
   color: #0f0c0c;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+}
+.navbar button:hover {
+  background-color: #20c5aa;
+  color: white;
+}
+.navbar button:disabled {
+  background-color: #20c5aa;
+  color: white;
+}
+.navbar ul {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  width: 80vw;
+}
+.navbar ul button {
+  height: 2.5vh;
+  width: 7vw;
+  border-radius: 15px;
+  background-color: #39dfc4;
+  border: #0f0c0c;
+  color: #0f0c0c;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+}
+.navbar ul button:hover {
+  background-color: #20c5aa;
+  color: white;
+}
+.navbar ul button:disabled {
+  background-color: #20c5aa;
+  color: white;
 }
 
 .wrapper {
@@ -95,7 +149,7 @@ body {
   grid-area: 3/2/4/3;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .div5 .div5__background {
   background-image: url("../../img/headpic.jpg");

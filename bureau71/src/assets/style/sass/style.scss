@@ -2,6 +2,7 @@ $primary-color : rgb(158, 244, 147);
 $secondary-color : #f6f8fa;
 $third-color : rgb(227, 252, 255);
 $fourth-color: #0f0c0c;
+$fifth-color: #39dfc4;
 
 @font-face {
     font-family: "vegan";
@@ -43,8 +44,8 @@ html {
     padding: 0;
 }
 
+
 body {
-    height: 100vh;
     width: 100vw;
     background-image: radial-gradient(circle at center,
             black 0.1rem,
@@ -56,7 +57,71 @@ body {
 }
 
 .navbar {
-    color: #0f0c0c;
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    div {
+        background: url('../../img/Bureau71LogoCyan.png');
+        background-size: cover;
+        height: 7vh;
+        width: 4vw;
+    }
+
+    button {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: $fifth-color;
+        border: #0f0c0c;
+        color: #0f0c0c;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: large;
+
+        &:hover {
+            background-color: darken($color: $fifth-color, $amount: 10);
+            color: lighten($color: $fifth-color, $amount: 50);
+        }
+
+        &:disabled {
+            background-color: darken($color: $fifth-color, $amount: 10);
+            color: lighten($color: $fifth-color, $amount: 50);
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        width: 80vw;
+
+        button {
+            height: 2.5vh;
+            width: 7vw;
+            border-radius: 15px;
+            background-color: $fifth-color;
+            border: #0f0c0c;
+            color: #0f0c0c;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: large;
+
+            &:hover {
+                background-color: darken($color: $fifth-color, $amount: 10);
+                color: lighten($color: $fifth-color, $amount: 50);
+            }
+
+            &:disabled {
+                background-color: darken($color: $fifth-color, $amount: 10);
+                color: lighten($color: $fifth-color, $amount: 50);
+            }
+        }
+
+    }
 }
 
 .wrapper {
@@ -120,7 +185,7 @@ body {
 
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
 
     .div5__background {
 
