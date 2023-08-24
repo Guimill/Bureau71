@@ -9,6 +9,11 @@ $fifth-color: #39dfc4;
     src: url('../../font/VSP.ttf') format("opentype");
 }
 
+@font-face {
+    font-family: "Ysabeau";
+    src: url('../../font/YsabeauSC-Regular.ttf') format("opentype");
+}
+
 
 @keyframes dingdong {
     from {
@@ -30,6 +35,25 @@ $fifth-color: #39dfc4;
     }
 }
 
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
 
 html {
     height: 100vh;
@@ -47,16 +71,12 @@ html {
 
 body {
     width: 100vw;
-    background-image: radial-gradient(circle at center,
-            black 0.1rem,
-            transparent 0), radial-gradient(circle at center, black 0.1rem, transparent 0);
-    background-size: 1.3rem 1.3rem;
-    background-position: 0 0, 0.65rem 0.65rem;
     background-color: darken($color: $secondary-color, $amount: 2%);
     z-index: 0;
 }
 
 .navbar {
+    z-index: 10;
     position: sticky;
     top: 0;
     height: 10vh;
@@ -65,10 +85,16 @@ body {
     align-items: center;
 
     &.scrolling {
-        transition: .3s ease-in-out;
+        animation: fade-in 1s ease-in;
         background: linear-gradient(to bottom, transparentize($color: $fifth-color, $amount: 0.6), transparentize($color: $fifth-color, $amount: 0.8), transparentize($color: #eff3f6, $amount: 1));
-        padding: 0;
         border-style: none;
+
+        div {
+            background: url('../../img/Bureau71LogoCyan.png');
+            background-size: cover;
+            height: 7vh;
+            width: 4vw;
+        }
     }
 
     div {
@@ -132,6 +158,9 @@ body {
 }
 
 .wrapper {
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: Ysabeau;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -149,7 +178,8 @@ body {
     height: 100vh;
 
     img {
-        height: 60vh;
+        z-index: 0;
+        width: 100vw;
     }
 }
 
@@ -327,4 +357,9 @@ form {
     color: #639787;
     text-align: center;
     padding: 10vh 0 10vh;
+}
+
+footer {
+    background-color: $fourth-color;
+    height: 50vh;
 }

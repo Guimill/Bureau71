@@ -58,7 +58,7 @@ export default function Navbar() {
             </li>
           </ul>
         )}
-        <div onClick={handleClick}></div>
+        <div onClick={handleClick} className={isShown ? "navbar scrolling" : "navbar"}></div>
       </div>
     </>
   );
