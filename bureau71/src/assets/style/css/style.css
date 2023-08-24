@@ -46,6 +46,12 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+.navbar.scrolling {
+  transition: 0.3s ease-in-out;
+  background: linear-gradient(to bottom, rgba(57, 223, 196, 0.4), rgba(57, 223, 196, 0.2), rgba(239, 243, 246, 0));
+  padding: 0;
+  border-style: none;
+}
 .navbar div {
   background: url("../../img/Bureau71LogoCyan.png");
   background-size: cover;
