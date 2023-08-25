@@ -85,9 +85,14 @@ body {
     align-items: center;
 
     &.scrolling {
+        z-index: 10;
+        position: sticky;
+        top: 0;
+    
         animation: fade-in 1s ease-in;
         background: linear-gradient(to bottom, transparentize($color: $fifth-color, $amount: 0.6), transparentize($color: $fifth-color, $amount: 0.8), transparentize($color: #eff3f6, $amount: 1));
         border-style: none;
+    
 
         div {
             background: url('../../img/Bureau71LogoCyan.png');
@@ -174,11 +179,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    top: 0;
+    z-index: 1;
+    height: 150vh;
 
-    height: 100vh;
 
     img {
-        z-index: 0;
+        top: 0;
+        position: absolute;
+        z-index: 2;
         width: 100vw;
     }
 }
@@ -204,7 +213,7 @@ body {
 .div3 {
     grid-area: 2 / 2 / 3 / 3;
 
-    margin: 0 20% 0 20%;
+    margin: 0 15% 0 15%;
     display: flex;
     align-items: center;
 }
@@ -212,7 +221,7 @@ body {
 .div4 {
     grid-area: 3 / 1 / 4 / 2;
 
-    margin: 0 20% 0 20%;
+    margin: 0 15% 0 15%;
     display: flex;
     align-items: center;
 }
@@ -256,22 +265,14 @@ body {
 
 .div7 {
     grid-area: 4 / 2 / 5 / 3;
-    margin: 0 20% 0 20%;
+    margin: 0 15% 0 15%;
 
     display: flex;
     align-items: center;
 }
 
 .div8 {
-    grid-area: 5 / 1 / 6 / 2;
-    margin: 0 20% 0 20%;
-
-    display: flex;
-    align-items: center;
-}
-
-.div9 {
-    grid-area: 5 / 2 / 6 / 3;
+    grid-area: 5 / 1 / 6 / 3;
     margin: 0 20% 0 20%;
 
     display: flex;
