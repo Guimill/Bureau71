@@ -1,3 +1,5 @@
+import Sidebar from :"../content/sidebar"
+
 export default function Prestations() {
     return (
       <div>
