@@ -3,8 +3,9 @@ export default function Prestations() {
       <div>
         <main className='prestations'>
             <p>
-                prestations
+                faire un sidebar pour les différents type de prestation ? 
             </p>
+        </Sidebar>
         </main>
       </div>
     );
