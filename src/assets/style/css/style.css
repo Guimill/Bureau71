@@ -138,6 +138,7 @@ body {
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  height: 500vh;
 }
 
 .div1 {
@@ -160,19 +161,21 @@ body {
   grid-area: 2/1/3/2;
   display: flex;
   align-items: center;
+  height: 80vh;
 }
 .div2 .div2__background {
-  background-image: url("../../img/headpic.jpg");
+  background-image: url("../../img/fritillaire.jpg");
   background-size: cover;
   border-left: none;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 14px, rgba(0, 0, 0, 0.3) 0px 7px 25px -5px;
   border-radius: 0px 20px 20px 0px;
-  height: 60%;
+  height: 80%;
   width: 90%;
 }
 
 .div3 {
   grid-area: 2/2/3/3;
+  height: 80vh;
   margin: 0 15% 0 15%;
   display: flex;
   align-items: center;
@@ -180,6 +183,7 @@ body {
 
 .div4 {
   grid-area: 3/1/4/2;
+  height: 80vh;
   margin: 0 15% 0 15%;
   display: flex;
   align-items: center;
@@ -187,6 +191,7 @@ body {
 
 .div5 {
   grid-area: 3/2/4/3;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -197,12 +202,13 @@ body {
   border-left: none;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 14px, rgba(0, 0, 0, 0.3) 0px 7px 25px -5px;
   border-radius: 20px 0px 0px 20px;
-  height: 60%;
+  height: 80%;
   width: 90%;
 }
 
 .div6 {
   grid-area: 4/1/5/2;
+  height: 80vh;
   display: flex;
   align-items: center;
 }
@@ -212,13 +218,14 @@ body {
   border-left: none;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 14px, rgba(0, 0, 0, 0.3) 0px 7px 25px -5px;
   border-radius: 0px 20px 20px 0px;
-  height: 60%;
+  height: 80%;
   width: 90%;
 }
 
 .div7 {
   grid-area: 4/2/5/3;
   margin: 0 15% 0 15%;
+  height: 80vh;
   display: flex;
   align-items: center;
 }
@@ -226,6 +233,7 @@ body {
 .div8 {
   grid-area: 5/1/6/3;
   margin: 0 20% 0 20%;
+  height: 80vh;
   display: flex;
   align-items: center;
 }
@@ -302,6 +310,7 @@ form fieldset textarea {
 }
 
 footer {
+  bottom: 0;
   background-color: #0f0c0c;
-  height: 50vh;
+  height: 40vh;
 }/*# sourceMappingURL=style.css.map */

@@ -88,11 +88,11 @@ body {
         z-index: 10;
         position: sticky;
         top: 0;
-    
+
         animation: fade-in 1s ease-in;
         background: linear-gradient(to bottom, transparentize($color: $fifth-color, $amount: 0.6), transparentize($color: $fifth-color, $amount: 0.8), transparentize($color: #eff3f6, $amount: 1));
         border-style: none;
-    
+
 
         div {
             background: url('../../img/Bureau71LogoCyan.png');
@@ -171,6 +171,7 @@ body {
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    height: 500vh;
 }
 
 .div1 {
@@ -197,21 +198,23 @@ body {
 
     display: flex;
     align-items: center;
+    height: 80vh;
 
     .div2__background {
 
-        background-image: url("../../img/headpic.jpg");
+        background-image: url("../../img/fritillaire.jpg");
         background-size: cover;
         border-left: none;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 14px, rgba(0, 0, 0, 0.3) 0px 7px 25px -5px;
         border-radius: 0px 20px 20px 0px;
-        height: 60%;
+        height: 80%;
         width: 90%;
     }
 }
 
 .div3 {
     grid-area: 2 / 2 / 3 / 3;
+    height: 80vh;
 
     margin: 0 15% 0 15%;
     display: flex;
@@ -220,6 +223,7 @@ body {
 
 .div4 {
     grid-area: 3 / 1 / 4 / 2;
+    height: 80vh;
 
     margin: 0 15% 0 15%;
     display: flex;
@@ -228,6 +232,7 @@ body {
 
 .div5 {
     grid-area: 3 / 2 / 4 / 3;
+    height: 80vh;
 
     display: flex;
     align-items: center;
@@ -240,13 +245,14 @@ body {
         border-left: none;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 14px, rgba(0, 0, 0, 0.3) 0px 7px 25px -5px;
         border-radius: 20px 0px 0px 20px;
-        height: 60%;
+        height: 80%;
         width: 90%;
     }
 }
 
 .div6 {
     grid-area: 4 / 1 / 5 / 2;
+    height: 80vh;
 
     display: flex;
     align-items: center;
@@ -258,7 +264,7 @@ body {
         border-left: none;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 14px, rgba(0, 0, 0, 0.3) 0px 7px 25px -5px;
         border-radius: 0px 20px 20px 0px;
-        height: 60%;
+        height: 80%;
         width: 90%;
     }
 }
@@ -266,6 +272,7 @@ body {
 .div7 {
     grid-area: 4 / 2 / 5 / 3;
     margin: 0 15% 0 15%;
+    height: 80vh;
 
     display: flex;
     align-items: center;
@@ -274,6 +281,7 @@ body {
 .div8 {
     grid-area: 5 / 1 / 6 / 3;
     margin: 0 20% 0 20%;
+    height: 80vh;
 
     display: flex;
     align-items: center;
@@ -361,6 +369,7 @@ form {
 }
 
 footer {
+    bottom: 0;
     background-color: $fourth-color;
-    height: 50vh;
+    height: 40vh;
 }
