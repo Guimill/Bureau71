@@ -1,4 +1,5 @@
-import Sidebar from '../content/sidebar';
+import Sidebar from "../sidebar";
+
 
 export default function Prestations() {
   return (
