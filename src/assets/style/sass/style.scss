@@ -175,21 +175,26 @@ body {
 }
 
 .div1 {
+
     grid-area: 1 / 1 / 2 / 3;
+
 
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 0;
-    z-index: 1;
-    height: 150vh;
+    height: 120vh;
 
-
-    img {
-        top: 0;
+    .div1__background {
         position: absolute;
-        z-index: 2;
-        width: 100vw;
+        z-index: 5;
+        top: 0;
+
+        background-image: url("../../img/pie_grieche.jpg");
+        background-size: cover;
+        border-left: none;
+        box-shadow: #bea881 0px 15px 50px, #bea881 0px 7px 25px -5px;
+        height: 100%;
+        width: 100%;
     }
 }
 
@@ -259,7 +264,7 @@ body {
 
     .div6__background {
 
-        background-image: url("../../img/headpic.jpg");
+        background-image: url("../../img/reine_des_champs.jpg");
         background-size: cover;
         border-left: none;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 14px, rgba(0, 0, 0, 0.3) 0px 7px 25px -5px;
@@ -369,8 +374,9 @@ form {
 }
 
 footer {
-    position: absolute;
+    position: static;
     bottom: 0;
     background-color: $fourth-color;
     height: 40vh;
+    width: 100%;
 }
