@@ -1,3 +1,8 @@
+import ise from "../assets/img/ise.png"
+import esa from "../assets/img/esa.png"
+import hg from "../assets/img/hg.png"
+import museum from "../assets/img/museum.png"
+import artelia from "../assets/img/artelia.png"
 
 
 export default function Index() {
@@ -12,7 +17,15 @@ export default function Index() {
     <div class="div5"> <div className="div5__background"></div> </div>
     <div class="div6"> <div className="div6__background"></div> </div>
     <div class="div7"> Ancien guide du prestigieux muséum d'histoire naturelle de Toulouse, je vous propose des activités naturalistes et vous propose mes talents de vulgarisateurs scientifiques !</div>
-    <div class="div8"> Les organismes qui m'ont fait confiance "logo museum d'histoire naturelle de nantes"</div>
+    <div class="div8"> Les organismes qui m'ont fait confiance :
+    <div className="div8__listwrapper"><ul>
+    <li><img src={ise} alt="logo ise" /></li>
+    <li><img src={esa} alt="logo esa" /></li>
+    <li><img src={museum} alt="logo museum" /></li>
+    <li><img src={hg} alt="logo haute-garonne" /></li>
+    <li><img src={artelia} alt="logo artelia" /></li>
+    </ul></div>
+    </div>
     </div>    
   );
 }
