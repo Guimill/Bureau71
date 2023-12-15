@@ -3,7 +3,8 @@ import esa from "../assets/img/esa.png"
 import hg from "../assets/img/hg.png"
 import museum from "../assets/img/museum.png"
 import artelia from "../assets/img/artelia.png"
-
+import extia from "../assets/img/extia.png"
+import orange from "../assets/img/orange.png"
 
 export default function Index() {
   return (
@@ -24,6 +25,8 @@ export default function Index() {
     <li><img src={museum} alt="logo museum" /></li>
     <li><img src={hg} alt="logo haute-garonne" /></li>
     <li><img src={artelia} alt="logo artelia" /></li>
+    <li><img src={extia} alt="logo extia" /></li>
+    <li><img src={orange} alt="logo orange" /></li>
     </ul></div>
     </div>
     </div>    
